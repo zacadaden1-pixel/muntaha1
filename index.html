@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Muntaha Aden IT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">MUNTAHA WEBSITE.</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact/Register</a></li>
+        </ul>
+    </nav>
+
+    <header class="section flex-center" style="text-align:center;">
+        <div class="card reveal" style="background:transparent; border:none; max-width: 800px;">
+            <h1 style="font-size: 3.5rem; margin-bottom: 20px;">
+                Empowering the <span style="color:var(--accent)">Digital Era</span>
+            </h1>
+            
+            <p style="font-size: 1.2rem; color:var(--text-secondary); margin-bottom: 25px;">
+                Information Technology is the backbone of modern innovation. As an IT professional, 
+                my mission is to design, implement, and manage the complex systems that allow 
+                businesses to thrive in an interconnected world.
+            </p>
+
+            <div style="text-align: left; background: var(--bg-card); padding: 30px; border-radius: 15px; border: 1px solid #334155;">
+                <h3 style="color:var(--accent); margin-bottom: 10px;">Why IT Matters</h3>
+                <p style="margin-bottom: 15px;">
+                    In today's fast-paced environment, technology is not just a tool; it is a strategic 
+                    necessity. From securing sensitive data through advanced cybersecurity measures to 
+                    optimizing workflows with cloud computing, Information Technology ensures 
+                    efficiency and reliability.
+                </p>
+                <p>
+                    I focus on providing robust solutions that include responsive web design[cite: 2, 5], 
+                    network stability, and technical support. My goal is to transform technical 
+                    challenges into seamless digital experiences for users worldwide.
+                </p>
+            </div>
+
+            <div style="margin-top: 30px;">
+                <a href="about.html" class="btn">Learn More About Me</a>
+                <a href="contact.html" class="btn" style="background: transparent; border: 1px solid var(--accent); color: var(--accent); margin-left: 10px;">Get in Touch</a>
+            </div>
+        </div>
+    </header>
+
+    <footer>
+        <p>&copy; 2026 Muntaha Aden | Submission Date: May 13 [cite: 17]</p>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { 
+                if(e.isIntersecting) e.target.classList.add('reveal'); 
+            });
+        });
+        document.querySelectorAll('.card').forEach(c => observer.observe(c));
+    </script>
+</body>
+</html>
